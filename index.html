@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mine/Your Sweeper</title>
+</head>
+<body ng-app="minesweeperApp">
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Minesweeper</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="play">Play Game</a></li>
+            <li><a ui-sref="rules">Rules to play</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="container">
+    <div ui-view></div>
+</div>
+
+
+
+
+
+
+</body>
+<link rel="stylesheet" href="client/common/css/app.css"/>
+<link rel="stylesheet" type="text/css" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
+<script src="client/common/scripts/app.js"></script>
+<script src="client/gameplay/game-controller.js"></script>
+</html>

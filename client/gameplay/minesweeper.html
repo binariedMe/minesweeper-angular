@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <table class="table-bordered">
+                <tr ng-repeat="row in board.rows">
+                    <td ng-repeat="cell in row" class="cell" ng-class="{covered : cell.isCovered}" ng-click="cellClick($parent.$index, $index)">
+                    <span ng-if="cell.value>=0">
+                        {{cell.value}}
+                    </span>
+                    <span ng-if="cell.value==-1">
+                        <span class="glyphicon glyphicon-record"></span>
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-4">
+            <div ng-if="winStatus && !gameRunStatus">
+                <img src="client/common/images/win.jpg" alt=""/>
+                <div>
+                    Hey! You won the game!!!
+                </div>
+            </div>
+            <div ng-if="!winStatus && !gameRunStatus">
+                <img src="client/common/images/loose.jpg" alt=""/>
+                <div>
+                    Oh! You lost the game!!!
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+            <button class="btn btn-success glyphicon glyphicon-refresh" ng-click="startNewGame()"></button>
+        </div>
+    </div>
+</div>

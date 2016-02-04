@@ -1,0 +1,17 @@
+.board {
+    border: 2px;
+}
+.cell{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.cell:hover{
+    cursor: pointer;
+}
+
+.covered{
+    background-color: #000000;
+    color: #000000;
+}
