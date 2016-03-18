@@ -15,3 +15,5 @@ Make sure you have node, npm installed and available from command line.
 6. go to browser, and hit url "http://localhost:4000"
 7. you will see your game running in the browser.
 8. you have one more tab to read through the rules of the game if you are new.
+
+Note : Cheat can be accessed by selecting the matrix using mouse. This will reveal the value in each cell in highlight. So that you can speed up the game.
